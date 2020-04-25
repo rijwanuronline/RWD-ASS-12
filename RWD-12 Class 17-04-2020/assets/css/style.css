@@ -1,0 +1,449 @@
+*{
+    /* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap'); */
+    margin:0;
+    padding:0;
+}
+.nav-item a{
+    color:#1f4f87;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hg{
+    min-height: 80vh;
+    position: relative;
+}
+.hg h1{
+    
+color: #fff;
+    
+font-size: 70px;
+    
+text-transform: uppercase;
+    
+font-weight: 700;
+/* font-family: 'Montserrat', sans-serif; */
+}
+.icon{
+    
+color: #fff;
+    
+font-size: 30px;
+    
+position: absolute;
+    
+bottom: 10%;
+    
+left: 50%;
+    
+transform: translateX(-50%);
+animation: up-down 1s linear infinite;
+animation-direction: alternate;
+}
+
+@keyframes up-down{
+    0%{ 
+        bottom:10%;
+
+    }
+    100%{
+        bottom:20%;
+
+    }
+}
+
+.who_we_are:hover span{
+    width:80px;
+
+}
+ .heading span{
+
+display: inline-block;
+
+height: 5px;
+
+width: 0;
+
+background: #f25a29;
+transition: .4s all ease-in-out;
+}
+ .heading h1{
+     
+color: #28377e;
+     
+text-transform: uppercase;
+     
+font-size: 30px;
+     
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+ }
+
+ .who_we_are{
+     padding:100px 0;
+
+ }
+ .who_we_are p{ 
+
+     color: #b0b0b1;
+     font-size: 14px;
+     padding-top: 35px;
+ }
+ .image{
+     position: relative;
+ }
+
+.image::before{
+    content:"" ;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transition: .4s all ease-in-out;
+    height: 0;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,2989d8+0,28377e+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(41,137,216,0) 0%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(41,137,216,0) 0%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(41,137,216,0) 0%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002989d8', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+.image:hover::before{
+    height: 100%;
+}
+.content{
+    
+position: absolute;
+    
+top: 60%;
+    
+left: 50%;
+    
+left: 50%;
+    
+color: #fff;
+opacity: 0;
+transition: .4s all ease-in-out;
+    
+transform: translate(-50%, -50%);
+}
+.content-icon{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    transform: translateX(-50%);
+    color:#fff;
+    font-size:25px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+    
+}
+.image:hover .content{
+    opacity: 1;
+    top: 50%;
+}
+.image:hover .content-icon{
+    opacity: 1;
+    left: 50%;
+
+ }
+    .heading-two span{
+
+    display: inline-block;
+    
+    height: 5px;
+    
+    width: 0;
+    
+    background: #f25a29;
+    transition: .4s all ease-in-out;
+    }
+
+     .heading-two h1{
+         
+    color: #28377e;
+         
+    text-transform: uppercase;
+         
+    font-size: 30px;
+         
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+     }
+.what_we_do h2{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+   
+     .what_we_do{
+         background-color: #f7f8f8;
+         padding:50px 0;
+         background-image: url(../images/what4.jpg);
+         background-repeat: no-repeat;
+         background-position: bottom right;
+         background-size: 900px;
+     }
+
+     .what_we_do:hover span{
+        width:80px;
+     }
+     .attorney{
+         background-image: url(..//images/our5.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size:cover;
+         padding:100px 0;
+
+     }
+     .attorney:hover span{
+         width: 60px;
+
+     }
+     .attorney_content{
+
+        transform: translateX(-10px);
+
+        position: absolute;
+
+        left: 20%;
+
+      bottom: 0;
+
+      color: #fff;
+      opacity: 0;
+      transition: .4s all ease-in-out;
+    
+
+}
+
+.image:hover  .attorney_content{
+    bottom:10%;
+    opacity: 1;
+
+} 
+.attorney .heading h1{
+    color:#fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.attorney .heading p{
+
+font-size: 14px;
+
+color: #929dcf;
+
+padding-top: 30px;
+}
+.attorney .heading h6{
+
+font-size: 18px;
+
+font-weight: bold;
+
+color: #f2622c;
+
+text-transform:uppercase;
+
+padding-top: 50px;
+}
+.languages{
+    padding: 100px 0;
+   
+}
+
+.heading-3 span{
+
+    display: inline-block;
+    
+    height: 5px;
+    
+    width: 0;
+    
+    background: #f25a29;
+    transition: .4s all ease-in-out;
+    }
+
+     .heading-3 h1{
+         
+    color: #28377e;
+         
+    text-transform: uppercase;
+         
+    font-size: 36px;
+         
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+     }
+
+     .languages:hover span{
+        width:80px;
+     }
+
+     .content-1 h3{
+         text-transform:uppercase;
+         color: #28377e;
+         font-size: 24px;
+         font-weight: 700;
+     }
+     .content-1 p{
+         font-size: 14px;
+         color: #99a2ad;
+         
+     }
+     .content-1 h6{
+         font-size: 14px;
+         font-weight: bold;
+         color:  #f2622c;
+         text-transform:uppercase;
+     }
+
+     .contact{
+         padding:70px 0 100px 0;
+         background-color:#28377e;
+     }
+     .heading-4 span{
+
+        display: inline-block;
+        
+        height: 5px;
+        
+        width: 0;
+        margin-bottom: 20px;
+        
+        background: #f25a29;
+        transition: .4s all ease-in-out;
+        }
+    
+         .heading-4 h1{
+             
+        color: #fff;
+             
+        text-transform: uppercase;
+             
+        font-size: 36px;
+             
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+         }
+    
+         .contact:hover span{
+            width:70px;
+         }
+
+         .form{
+
+text-align: center;
+
+width: 80%;
+
+padding-top: 50px;
+
+margin: auto;
+
+
+
+}
+ .form input{
+             
+margin-bottom: 15px;
+             
+background: transparent;
+             
+padding-bottom: 5px;
+             
+margin-top: 10px;
+             
+font-size: 16px;
+             
+width: 50%;
+             
+height: 20px;
+             
+font-color: #fff;
+             
+font-color: #fff;
+             
+colro: red;
+             
+border: none;
+             
+border-bottom: 1px #6c64a8 solid;
+         }
+
+         .form-button{
+            color: #fff;
+            background: #f2622c;
+           
+            border: 2px solid #f2622c;
+            padding: 5px 30px;
+            text-transform: uppercase;
+        }
+         .form-group h6{
+
+
+         }
+
+         .form-group span{
+             
+        display: inline-block;
+        
+        height: 5px;
+        
+        width: 80%;
+   
+        
+        background: #f25a29;
+
+         }
+         .footer{
+             background-color: #0c1234;
+             padding:50px 0;
+             position: relative;
+         }
+         .footer p{
+             color:#616ca8;
+             font-size: 14px;
+         }
+
+         .footer_right{
+             display:inline-block;
+             color:#fff;
+         }
+
+
+
+         .footer_right a{
+             margin-left: 20px;
+        }
+
+
+        .footer_right a i{
+
+            color:#b1b7dd
+        }
+           
+           
+.footer_right ul{
+    display: flex;
+    justify-content: flex-end;
+}         
+
+
+            
+            
+
+     
